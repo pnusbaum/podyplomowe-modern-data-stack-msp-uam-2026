@@ -1,0 +1,1 @@
+ATTACH '../data/bookstore.ddb' AS external_db (READ_ONLY);
