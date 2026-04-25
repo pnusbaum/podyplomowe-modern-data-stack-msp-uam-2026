@@ -2617,3 +2617,303 @@ KeyboardInterrupt
 [0m11:03:55.508970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b911aa51130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9119a788c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9119841be0>]}
 [0m11:03:55.509677 [debug] [MainThread]: Flushing usage events
 [0m11:03:56.051153 [debug] [MainThread]: An error was encountered while trying to flush usage events
+19:56:06.146975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde20cef9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde210897f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde20cefbf0>]}
+
+
+============================== 19:56:06.238380 | 77a34385-d2a4-43f9-8a73-bdc33de55e29 ==============================
+19:56:06.238380 [info ] [MainThread]: Running with dbt=1.11.8
+19:56:06.239455 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt --no-use-colors --no-write-json seed --project-dir /config/workspace/dbt_bookstore_lab/dbt_project', 'debug': 'False', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'False', 'partial_parse': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error': 'None', 'target_path': 'None', 'profiles_dir': '/config/.dbt', 'static_parser': 'True', 'version_check': 'True', 'log_path': '/config/workspace/dbt_bookstore_lab/dbt_project/logs'}
+19:56:06.875065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde2038fcb0>]}
+19:56:06.967671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde2029bb30>]}
+19:56:06.972265 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+19:56:07.163264 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+19:56:07.406999 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+19:56:07.407916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde20cceab0>]}
+19:56:09.631893 [warn ] [MainThread]: [WARNING][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_transactions'
+in package 'dbt_project' (models/staging/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+19:56:09.632757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde22e38b30>]}
+19:56:09.996159 [warn ] [MainThread]: [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+19:56:10.013150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde1a666390>]}
+19:56:10.104367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde1a6fa600>]}
+19:56:10.105417 [info ] [MainThread]: Found 4 models, 1 seed, 2 operations, 11 data tests, 1 source, 475 macros
+19:56:10.106422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77a34385-d2a4-43f9-8a73-bdc33de55e29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde1a65fad0>]}
+19:56:10.111531 [info ] [MainThread]: 
+19:56:10.113043 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+19:56:10.113803 [info ] [MainThread]: 
+19:56:10.115806 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+19:56:10.117737 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_bookstore_dwh'
+19:56:10.285010 [debug] [ThreadPool]: Using duckdb connection "list_bookstore_dwh"
+19:56:10.285710 [debug] [ThreadPool]: On list_bookstore_dwh: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_bookstore_dwh"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"bookstore_dwh"'
+    
+  
+  
+19:56:10.286238 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:56:10.481520 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+19:56:10.482322 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_bookstore_dwh"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"bookstore_dwh"'
+    
+  
+  
+19:56:10.482931 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+19:56:10.483415 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:56:10.490425 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+19:56:10.491027 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+19:56:10.491505 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+19:56:10.491993 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:56:10.498967 [debug] [MainThread]: Connection 'master' was properly closed.
+19:56:10.499502 [debug] [MainThread]: Connection 'list_bookstore_dwh' was properly closed.
+19:56:10.500046 [info ] [MainThread]: 
+19:56:10.500622 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.39 seconds (0.39s).
+19:56:10.501551 [error] [MainThread]: Encountered an error:
+IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+19:56:10.524943 [error] [MainThread]: Traceback (most recent call last):
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/sql/connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 1320, in execute_macro
+    result = macro_function(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 20, in macro
+  File "/app/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 50, in macro
+  File "/app/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 33, in macro
+  File "/app/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/app/venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 130, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/sql/connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/sql/connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 391, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 408, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 727, in seed
+    results = task.run()
+              ^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/task/runnable.py", line 626, in run
+    result = self.execute_with_hooks(selected_uids)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/task/runnable.py", line 559, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/task/run.py", line 1114, in before_run
+    self.create_schemas(adapter, required_schemas)
+  File "/app/venv/lib/python3.12/site-packages/dbt/task/runnable.py", line 734, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+                                    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt_common/utils/executor.py", line 16, in connected
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/task/runnable.py", line 709, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/sql/impl.py", line 218, in list_schemas
+    results = self.execute_macro(LIST_SCHEMAS_MACRO_NAME, kwargs={"database": database})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 1319, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/venv/lib/python3.12/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_duckdb.IOException: IO Error: Cannot open file "/config/spbd-lab-przetwarzanie-danych-w-chmurze/spbd-lab-przetwarzanie-danych-w-chmurze/dbt/lab-dbt02/dbt_bookstore_lab/data/bookstore_dwh.ddb": No such file or directory
+
+19:56:10.526792 [warn ] [MainThread]: [WARNING][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+19:56:10.528614 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 4.489852, "process_in_blocks": "34320", "process_kernel_time": 0.5789, "process_mem_max_rss": "185828", "process_out_blocks": "1120", "process_user_time": 9.960401}
+19:56:10.529599 [debug] [MainThread]: Command `dbt seed` failed at 19:56:10.529392 after 4.49 seconds
+19:56:10.530408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde20586a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde1ffe9dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dde1a62a1e0>]}
+19:56:10.531240 [debug] [MainThread]: Flushing usage events
+19:56:11.026284 [debug] [MainThread]: An error was encountered while trying to flush usage events
