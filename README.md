@@ -1,1 +1,1 @@
-# spbd-lab-przetwarzanie-danych-w-chmurze
+# modern-data-stack-msp-uam-2026
