@@ -4,7 +4,7 @@ terraform {
 
   # Konfiguracja zdalnego przechowywania stanu dla lab-02
   backend "gcs" {
-    bucket  = "spdb-2026-tf-state" # Ten sam bucket co w lab-01
+    bucket  = "modern-data-stack-msp-uam-2026-tf-state" # Ten sam bucket co w lab-01
     prefix  = "terraform/lab-02/state" # INNA ścieżka dla tego modułu
   }
 
